@@ -15,7 +15,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useWebSocket from "react-use-websocket";
 
-export default function PriceTable() {
+export default function ParityTable() {
   const pricesList = useSelector((state: RootState) => state.priceList);
   const [socket, setSocket] = useState(null);
   const { selected, groups } = useSelector(
@@ -38,7 +38,7 @@ export default function PriceTable() {
     onMessage: (message: MessageEvent) =>
       SetSymbolPriceData(JSON.parse(message.data)),
     shouldReconnect: (closeEvent) => true,
-    reconnectInterval: 2 * 1000, //2 segundos
+    reconnectInterval: 2 * 1000,
   });
 
   const SetSymbolPriceData = (symbolData: WebsocketResponseType) => {

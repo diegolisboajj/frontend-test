@@ -13,15 +13,6 @@
   --text: #000000;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --container-background: #151718;
-    --input-background: rgb(29 31 32);
-    --text-opacity: #5a5a5a;
-    --text: #FFFFFF;
-  }
-} */
-
 body {
   color: var(--text);
   background: var(--container-background);

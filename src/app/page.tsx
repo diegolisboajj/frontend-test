@@ -1,5 +1,5 @@
 import GroupList from "@/components/groupList";
-import PriceTable from "@/components/symbolsData";
+import ParityTable from "@/components/symbolsData";
 import SymbolsList from "@/components/symbolsList";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
           <GroupList />
           <SymbolsList />
         </div>
-        <PriceTable />
+        <ParityTable />
       </div>
     </main>
   );
