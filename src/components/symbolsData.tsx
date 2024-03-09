@@ -15,7 +15,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useWebSocket from "react-use-websocket";
 
-export default function ParityTable() {
+export default function PriceTable() {
   const pricesList = useSelector((state: RootState) => state.priceList);
   const [socket, setSocket] = useState(null);
   const { selected, groups } = useSelector(

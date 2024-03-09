@@ -7,6 +7,8 @@ export default function Home() {
     <main className="gap-4 my-4 w-full">
       <div className="container flex flex-col justify-normal items-center p-6 mx-auto lg:w-3/4">
         <div className="flex flex-col lg:flex-row gap-4 w-full mt-4">
+          <GroupList />
+          <SymbolsList />
         </div>
         <ParityTable />
       </div>
