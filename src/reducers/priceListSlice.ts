@@ -31,9 +31,6 @@ export const listSlice = createSlice({
               : register;
           })
         : [...state.symbols, action.payload];
-      // state.symbols = state.symbols.map((data) => {
-      //   return data.symbol == action.payload.symbol ? action.payload : data;
-      // });
     },
     removePrices: (state) => {
       state.symbols = [];
